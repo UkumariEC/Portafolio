@@ -1,0 +1,24 @@
+.position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.slider {
+    background-image: src="images/img_SW/piezas/2.png";
+    background-size: cover;
+    height: 25%;
+    width: 25%;
+    border-radius: 10px;
+    animation: animate 3s infinite;
+}
+
+@keyframes animate {
+    20% {
+        background-image: src="images/img_SW/piezas/2.png";
+    }
+    100% {
+        background-image: src="images/img_SW/piezas/1_pieza_tornillo.png";
+    }
+}
