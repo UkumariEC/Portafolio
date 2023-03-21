@@ -1,24 +1,37 @@
-.position {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.slider {
-    background-image: src="images/img_SW/piezas/2.png";
-    background-size: cover;
-    height: 25%;
-    width: 25%;
-    border-radius: 10px;
-    animation: animate 3s infinite;
+.slider{
+    width: 100px;
+    height: 600px;
+    overflow: hidden;
 }
 
-@keyframes animate {
-    20% {
-        background-image: src="images/img_SW/piezas/2.png";
-    }
-    100% {
-        background-image: src="images/img_SW/piezas/1_pieza_tornillo.png";
-    }
+.slider ul{
+    display: flex;
+    animation: cambio 10s infinite alternate linear;
+    width: 400px;
+}
+
+.slider li{
+    width: 100px;
+    list-style: none;
+
+}
+.slider img{
+    width: 100px;
+    height: 100px;
+}
+
+@keyframes cambio{
+    0%{margin-left:0;}
+    50%{margin-left:0;}
+
+    50%{margin-left:-100;}
+    100%{margin-left:-100;}
+
+
 }
